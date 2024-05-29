@@ -6,6 +6,13 @@ It assumes that you want to build RSPt from scratch and that you have access to 
 (by [cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 the github repo perhaps?).
 
+# Table of contents
+1. [Compiling and running RSPt](#compiling-and-running-rspt)
+    - [The GNU compilers and MPI](#the-gnu-compilers-and-mpi)
+    - [Intel MKL and FFTW3](#intel-mkl-and-fftw3)
+    - [Things to consider for optimizations](#things-to-consider-for-optimizations)
+
+
 ## Compiling and running RSPt
 RSPt uses makefiles to build. In order to use the correct compilers, libraries, flags, etc. for the build
 the file RSPTmake.inc is used. It contains declarations of which compilers, flags, libraries, etc. to use.
