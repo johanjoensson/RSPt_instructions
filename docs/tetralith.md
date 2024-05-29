@@ -1,4 +1,7 @@
 # Tetralith
+The settings below are quite old and therefore might not work. I will update them at some point.
+
+
 On Tetralith, set the following variable in the `testsuite/runcommand` file (if it does not exist, use `testsuite/runcommand.default` instead)
 ```
 MPIRUN="mpprun -n 2"

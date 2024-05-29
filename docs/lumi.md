@@ -1,4 +1,20 @@
 # LUMI
+For running jobs on a compute node on LUMI, use the `srun` command. Set the `MPIRUN` variable
+in the `testsuite/runcommand` (or if it does not exist, `testsuite/runcommand.default`) file to
+match, i.e.
+
+```
+MPIRUN="srun -n 2"
+```
+
+On LUMI, in order to optimize code for the CPU partition you should load the correct module, i.e.,
+```
+ml craype-x86-milan
+```
+By default `craype-x86-rome` is loaded, which optimizes code for the login nodes.
+By loading these modules you should not need to specify any other flags for optimizing
+the code for certain CPU architectures (i.e. `-march` for GCC).
+
 ## GNU compiler
 On LUMI load the GNU programming environment, for the compiler and scientific libraries.
 Also load the Cray FFTW libraries.
@@ -39,4 +55,5 @@ INCLUDEDIRS      =
 ```
 
 ## Cray compiler
-So far, I have not found a working configuration for the Cray compilers on LUMI.
+So far, I have not found a working configuration for the Cray compilers on LUMI. The Cray compiler suite
+is meant to apply heavy optimizations, these might not work with parts of the RSPt code.
