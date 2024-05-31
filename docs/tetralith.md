@@ -14,7 +14,7 @@ ml buildenv-gcc/2022a-eb.
 On Tetralith, using the GNU compilers, mpifort is an alias for the (MPI) fortran compiler you have loaded, mpicc is an
 alias for the (MPI) C compiler, and mpic++ is an alias for the (MPI) C++ compiler.
 
-### RSPtmake.inc
+### RSPTmake.inc
 ```
 OPTIMIZATIONS    = -O2 -march=native
 FHOME            =
@@ -46,7 +46,7 @@ ml buildenv-intel/2023.1.0-oneapi
 On Tetralith, using the Intel compilers, mpiifort is an alias for the (MPI) fortran compiler you have loaded, mpiicc is an
 alias for the (MPI) C compiler, and mpiicpc is an alias for the (MPI) C++ compiler.
 
-### RSPtmake.inc
+### RSPTmake.inc
 ```
 OPTIMIZATIONS    = -O3 -ipo -xHost -mkl=sequential
 FHOME            =

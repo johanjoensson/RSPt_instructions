@@ -27,7 +27,7 @@ ml cray-fftw/3.3.10.5
 On LUMI, ftn is an alias for the fortran compiler you have loaded, cc is an
 alias for the C compiler, and CC is an alias for the C++ compiler.
 
-### RSPtmake.inc
+### RSPTmake.inc
 ```
 OPTIMIZATIONS    = -O2 -ftree-vectorize -funroll-loops
 FHOME            =

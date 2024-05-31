@@ -25,7 +25,7 @@ ml cray-fftw/3.3.10.6
 On Dardel, ftn is an alias for the fortran compiler you have loaded, cc is an
 alias for the C compiler, and CC is an alias for the C++ compiler.
 
-### RSPtmake.inc
+### RSPTmake.inc
 ```
 OPTIMIZATIONS    = -O2 -march=znver2 -mtune=znver2 -mfma -mavx2 -m3dnow -fomit-frame-pointer
 FHOME            =
